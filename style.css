@@ -2,12 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins";
 }
 .debug {
   border: 1px solid black;
 }
+body {
+  min-width: fit-content;
+}
 header {
   height: 50px;
+  padding: 5px;
+}
+header img {
+  height: 40px;
+  margin-left: 20px;
 }
 
 .container-1 {
@@ -35,12 +44,12 @@ header {
 .black {
   color: black;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: bold;
 }
 .white {
   color: white;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: bold;
 }
 p span {
   font-weight: bold;
@@ -48,7 +57,7 @@ p span {
 
 .container-1 img {
   height: 200px;
-  mix-blend-mode: multiply;
+  background-color: #a48c8c;
   border-radius: 100%;
 }
 button {
@@ -61,9 +70,13 @@ button {
   top: -100px;
   left: 50px; */
 }
+button:hover {
+  cursor: pointer;
+}
 .container-2 {
   text-align: center;
   background-color: #f5f5f5;
+  padding: 20px;
 }
 .title {
   font-size: 20px;
@@ -76,15 +89,15 @@ button {
   flex-wrap: wrap;
 }
 .card {
-  width: calc(90% / 2);
+  width: calc(85% / 2);
   margin: 10px;
 }
 .card img {
-  height: 200px;
+  width: 100%;
 }
 .card span {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 .card p {
@@ -94,35 +107,41 @@ button {
 .container-3 {
   background-color: #e4dada;
   padding: 15px 0px;
+  width: 100%;
 }
 .container-3 .title {
   text-align: center;
   font-weight: bold;
+  margin-bottom: 20px;
+}
+.instructions-container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
 }
 .instructions {
-  display: flex;
-  width: 80%;
-  margin: 0 auto;
+  padding: 10px;
 }
 .number {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .number p {
-  font-size: 20px;
+  font-size: 25px;
   color: white;
   font-weight: 900;
   background-color: #a48c8c;
-  width: 60px;
-  height: 30px;
+  width: 50px;
+  height: 40px;
   border-radius: 100%;
   text-align: center;
-  vertical-align: middle;
   border: 2px solid black;
-  margin: 10px;
 }
 .number span {
+  width: 100%;
   font-size: 10px;
-  padding: 10px;
+  /* padding: 10px; */
   text-align: center;
 }
 .computer-container {
@@ -160,4 +179,35 @@ input {
 .container-4 p {
   font-size: 14px;
   padding: 10px 0px;
+}
+footer {
+  color: white;
+}
+.footer-1 {
+  background-color: #211e1e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-1 img {
+  width: 150px;
+  padding: 20px;
+}
+.footer-1 p {
+  font-size: 13px;
+  font-weight: 200;
+}
+.footer-1 span {
+  font-size: 5px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+.footer-2 {
+  background-color: #d70f0f;
+  display: flex;
+  justify-content: space-around;
+  font-size: 10px;
+}
+.footer-2 p:hover {
+  cursor: pointer;
 }
