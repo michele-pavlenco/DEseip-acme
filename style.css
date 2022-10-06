@@ -65,10 +65,11 @@ button {
   padding: 5px 20px;
   border: 0px;
   color: white;
-
-  /* position: absolute;
-  top: -100px;
-  left: 50px; */
+}
+.container-1 button {
+  position: absolute;
+  top: -150px;
+  left: 50px;
 }
 button:hover {
   cursor: pointer;
@@ -151,7 +152,6 @@ button:hover {
 .computer {
   width: 70%;
   margin: 50px auto;
-
   background-color: #584949;
   border-radius: 30px;
   display: flex;
@@ -163,6 +163,9 @@ button:hover {
 }
 input {
   border-radius: 10px;
+}
+input:active {
+  border: 2px solid #d70f0f;
 }
 .computer button {
   margin: 20px;
@@ -204,10 +207,59 @@ footer {
 }
 .footer-2 {
   background-color: #d70f0f;
+}
+.footer-2-container {
   display: flex;
   justify-content: space-around;
   font-size: 10px;
 }
 .footer-2 p:hover {
+  cursor: pointer;
+}
+.popuptext {
+  display: none;
+  position: relative;
+  text-align: center;
+}
+.popup p {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.popup .show {
+  display: block;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.popuptext table {
+  position: absolute;
+  background-color: #211e1ed6;
+  top: -270px;
+  left: -66px;
+  width: 260px;
+  height: 170px;
+  font-size: 13px;
+}
+td {
+  border: 1px solid white;
+}
+.close {
+  color: #d70f0f;
   cursor: pointer;
 }
