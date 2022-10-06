@@ -263,3 +263,11 @@ td {
   color: #d70f0f;
   cursor: pointer;
 }
+.message {
+  padding: 20px;
+  text-align: center;
+}
+.message .btnlight {
+  background-color: #584949;
+  border: 1px solid white;
+}
