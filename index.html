@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- media queries -->
+    <link rel="stylesheet" href="./media.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" -->
+    <!-- integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <title>DEseip Cripto Acme</title>
+</head>
+
+<body>
+    <header class="">
+        <img src="./img/Acme-corp.png" alt="Logo acme">
+    </header>
+    <main>
+        <div class="container-1">
+            <div class="container-1-1">
+                <span class="black ">Quanto costa custodire le tue cripto?</span> <br>
+                <span class="white ">Scoprilo con Acme Corp.</span>
+                <p>Quando il tuo patrimonio cripto inizia a crescere, custodirlo in modo sicuro è fondamentale per
+                    evitare
+                    di incorrere in
+                    truffe e rischi.
+                    Prova il servizio di custodia affidabile e trasparente di Acme Corp: <span>calcola le tue
+                        commissioni
+                        mensili e scopri tutti i vantaggi.</span></p>
+            </div>
+
+            <div class="conatainer-1-2 ">
+                <img src="./img/bitcoin.png" alt="bitcoin image">
+            </div>
+
+            <div class="container-1-3 ">
+                <button>Calcola la tua fee</button>
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <div class="container-2">
+            <span class="title ">
+                Cosa rende sicura e affidabile <br> la custodia di Acme Corp:
+            </span>
+            <div class="cards ">
+                <div class="card">
+                    <img src="./img/Gestore dedicato_1 panna 3.png" alt="Protocollo di custodia">
+                    <span>PROTOCOLLO DI CUSTODIA</span>
+                    <p>ll nostro protocollo di custodia è basato su due livelli cold storage, tre stadi autorizzativi a
+                        firma multipla e 5
+                        aziende indipendenti coinvolte</p>
+                </div>
+                <div class="card">
+                    <img src="./img/Gestore dedicato_1 panna 6.png" alt="Gestore dedicato">
+                    <span>Gestore dedicato</span>
+                    <p>Hai a tua totale disposizione un gestore dedicato raggungibile via email, chat, telefono e di
+                        persona</p>
+                </div>
+                <div class="card">
+                    <img src="./img/attestazioniquiz.png" alt="Attestazioni OIZ">
+                    <span>Attestazioni OIZ</span>
+                    <p>Acme Corp si sottopone ad audit esterno e possiede numerose attestazioni di livello</p>
+                </div>
+                <div class="card">
+                    <img src="./img/tesoreria.svg" alt="Coperture assicurative">
+                    <span>Coperture assicurative</span>
+                    <p>Qualsiasi cosa accada, la copertura assicurativa garantisce il totale rimborso del patrimonio</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-3">
+            <div class="title">
+                <p>Calcola la tua fee</p>
+            </div>
+            <div class="instructions-container">
+                <div class="instructions">
+                    <div class="number">
+                        <p>1</p>
+                        <span>Inserisci l’ammontare del tuo patrimonio in criptovalute</span>
+                    </div>
+                </div>
+                <div class="instructions">
+                    <div class="number">
+                        <p>2</p>
+                        <span>Scopri la tua fee mensile</span>
+                    </div>
+                </div>
+                <div class="instructions">
+                    <div class="number">
+                        <p>3</p>
+                        <span>Apri il conto e godi di tutti i vantaggi</span>
+                    </div>
+                </div>
+            </div>
+            <div class="computer-container">
+                <div class="computer">
+                    <p>Inserisci gli asset che vuoi custodire</p>
+                    <input type="number" name="" id="firstNumber">
+                    <button onclick="multiplyBy()">Calcola</button>
+                    <h2> <span id="result">--,--</span> <span>&euro;</span> </h2>
+                    <div class="popup" onclick="myFunction()">
+                        <p> Dettagli del calcolo</p>
+                        <span class="popuptext" id="myPopup">
+                            <table>
+                                <tr>
+                                    <th class="close"> X <br> (Close) </th>
+                                    <th>Da &euro;</th>
+                                    <th>A &euro;</th>
+                                    <th>Commisioni annuali <br>(IVA inclusa)</th>
+                                </tr>
+                                <tr>
+                                    <td>Primi 500,000</td>
+                                    <td> 0 </td>
+                                    <td>500,000 </td>
+                                    <td>0,70% </td>
+                                </tr>
+                                <tr>
+                                    <td>Successivi 500,000</td>
+                                    <td>500,000</td>
+                                    <td>1,000,000</td>
+                                    <td>0,60%</td>
+                                </tr>
+                                <tr>
+                                    <td>Successivi 4,000,000</td>
+                                    <td>1,000,000</td>
+                                    <td>5,000,000</td>
+                                    <td>0,50%</td>
+                                </tr>
+                                <tr>
+                                    <td>Successivi 5,000,000</td>
+                                    <td>5,000,000</td>
+                                    <td>10,000,000</td>
+                                    <td>0,40%</td>
+                                </tr>
+                                <tr>
+                                    <td>Sopra 10,000,000</td>
+                                    <td>10,000,000</td>
+                                    <td>Moon</td>
+                                    <td>0,30%</td>
+                                </tr>
+                            </table>
+                        </span>
+                    </div>
+                    <div id="message" class="message">
+                        <!-- <div
+                            ><p>Prova il servizio di custodia Acme Corp: non potrai più farne a meno.</p>
+                            <button class="btnlight">Parla con noi </button>
+                            <button>Apri un conto</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-4">
+            <div class="title">
+                <p>Tanti servizi tutti inclusi nella custodia</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="./img/Gestore dedicato_1 panna 8-1.png" alt="Gestore dedicato">
+                    <p>Gestore dedicato</p>
+                </div>
+
+                <div class="card">
+                    <img src="./img/esecutore.png" alt="Nomina di un esecutore">
+                    <p>Nomina di un esecutore</p>
+                </div>
+
+                <div class="card">
+                    <img src="./img/fiduciarie-1.png" alt="Apertura di rapporti intestati a società e fiduciarie">
+                    <p>Apertura di rapporti intestati a società e fiduciarie</p>
+                </div>
+
+                <div class="card">
+                    <img src="./img/intestazioni-flessibili-pricing-white.png" alt="Apertura di rapporti cointestati">
+                    <p>Apertura di rapporti cointestati</p>
+                </div>
+                <div class="card">
+                    <img src="./img/passaggio-generazionale-pricing-white.png" alt="Passaggio generazionale">
+                    <p>Passaggio generazionale</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-1">
+            <img src="./img/Acme-corp-white.png" alt="Logo acme">
+            <p>Acme corp inc.</p>
+            <p>Via Emilio De Marchi 4, Milano (MI) - ITALY</p>
+            <p>info@acmecorp.com</p>
+            <span>Designed by Deseip</span>
+        </div>
+        <div class="footer-2">
+            <div class="footer-2-container">
+                <p>2022 Acme Corp Inc. - P.IVA 01234567890</p>
+                <p>PRIVACY POLICY</p>
+                <p>COOKIE POLICY</p>
+                <p>COOKIES PREFERENCES</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
